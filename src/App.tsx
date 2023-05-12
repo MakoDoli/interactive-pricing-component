@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import circles from "./assets/pattern-circles.svg";
+import Slider from "./components/Slider";
+import { Views } from "./Views";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="circles" src={circles} alt="circles"></img>
+      <div className="titles">
+        <h1>Simple, trafic-based pricing</h1>
+        <p className="heading">Sign-up for our 30-day trial.</p>
+        <p className="heading"> No credit card required. </p>
+      </div>
+      <Slider views={Views} />
     </div>
   );
 }
