@@ -107,9 +107,11 @@ h2 {
   align-items: center;
   padding: 0 4px;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .toggle:hover {
   background-color: #10d8c4;
+  transition: 1s ease;
 }
 .toggle-button {
   background-color: white;
@@ -170,6 +172,7 @@ h2 {
   align-items: center;
   justify-content: center;
   color: #becdff;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .price {

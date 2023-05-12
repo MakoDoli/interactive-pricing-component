@@ -10,17 +10,6 @@ export default function Slider(props: Props) {
   const [views, setViews] = useState("100k");
   const [toggle, setToggle] = useState(true);
 
-  //   const pageviews = [
-  //     "0",
-  //     "25k",
-  //     "50k",
-  //     "75k",
-  //     "100k",
-  //     "250k",
-  //     "500k",
-  //     "750k",
-  //     "1M",
-  //   ].reverse();
   const updateViews = function (num: number) {
     setViews(props.views[(32 - num) / 4]);
   };
